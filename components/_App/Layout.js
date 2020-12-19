@@ -3,7 +3,7 @@ import { useState } from "react";
 import HeadContent from "./HeadContent";
 
 export default function Layout({ children }) {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   return (
     <>
