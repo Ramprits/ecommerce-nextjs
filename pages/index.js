@@ -1,65 +1,44 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+      <div className="row">
+        <div className="col-12 col-lg-6 mx-auto text-center text-lg-left">
+          <div className="col-md-8 col-lg-10 mx-auto mx-lg-0 pt-lg-5 pb-4">
+            <h2 className="mb-3 fs-1 fw-bold">
+              <span>The quick</span>
+              <span className="text-primary">brown fox</span>
+              <span>jumps over the lazy dog.</span>
+            </h2>
+            <p className="pr-lg-5 text-muted lh-lg mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              luctus eget justo et iaculis. Quisque vitae nulla malesuada,
+              auctor arcu vitae, luctus nisi.
             </p>
-          </a>
+          </div>
+          <div>
+            <a className="mr-2 btn btn-primary" href="#">
+              Check Now
+            </a>
+            <a className="btn btn-outline-primary" href="#">
+              Documentation
+            </a>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        <div className="col-12 col-lg-6 mt-5 mt-lg-0">
+          <div>
+            <img
+              className="img-fluid"
+              src="metis-assets/illustrations/work-tv.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
