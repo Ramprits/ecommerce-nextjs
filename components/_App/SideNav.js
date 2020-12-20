@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SideNav() {
+export default function SideNav({ toggle, handleToggleClick }) {
   return (
     <div
       className={`fixed-top top-0 bottom-0 ${toggle ? "d-none" : ""}`}
@@ -31,7 +31,7 @@ export default function SideNav() {
               data-target="#sideMenuHeaders07"
               aria-controls="sideMenuHeaders07"
               aria-label="Close"
-              onClick={() => setToggle(!toggle)}
+              onClick={handleToggleClick}
             ></button>
           </div>
           <div>

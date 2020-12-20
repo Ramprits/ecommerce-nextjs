@@ -11,7 +11,6 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="/nprogress.css" />
         <body>
           <Main />
           <NextScript />

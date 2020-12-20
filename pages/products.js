@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function products() {
+const Products = () => {
   return (
     <section className="py-5">
       <div className="container">
@@ -26,10 +26,8 @@ export default function products() {
                 Lorem ipsum dolor sit amet.
               </a>
             </h4>
-            <p className="text-muted lh-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              luctus eget justo et iaculis.
-            </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            <p className="text-muted lh-lg">luctus eget justo et iaculis.</p>
           </div>
           <div className="col-12 col-lg-8 mb-3">
             <a className="text-decoration-none" href="#">
@@ -141,4 +139,6 @@ export default function products() {
       </div>
     </section>
   );
-}
+};
+
+export default Products;
